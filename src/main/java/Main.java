@@ -6,18 +6,18 @@ class Main
     public static void main(String[] args)
     {
         Scanner myObj = new Scanner(System.in);
-        ArrayList<String> names = new ArrayList<String>();
+        ArrayList<String> namesOfDaMaybeDwarfs = new ArrayList<String>();
         for (int x=0; x != 6;x++)
         {
             System.out.println("Give me a name!");
-            names.add(myObj.nextLine());
+            namesOfDaMaybeDwarfs.add(myObj.nextLine());
         }
 
         while (1==1)
         {
-            System.out.println("Dwarfcheck?");
-            String dwrfCheck = myObj.nextLine();
-            if (names.contains(dwrfCheck))
+            System.out.println("Dwarf check?");
+            String dwarfCheck = myObj.nextLine();
+            if (namesOfDaMaybeDwarfs.contains(dwarfCheck))
             {
                 System.out.println("They're a dwarf!");
             }
